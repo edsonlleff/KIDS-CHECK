@@ -1,86 +1,136 @@
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KIDS CHECK | Asistencia Escolar</title>
+    <title>KIDS CHECK | Control de Asistencia Inicial</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>KIDS CHECK</h1>
-        <p>Sistema de control de asistencia escolar</p>
+    <!-- NAVEGACIÓN -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-hands-holding-child"></i> KIDS CHECK
+        </div>
+        
+        <div class="nav-actions">
+            <!-- Único botón en toda la cabecera -->
+            <a href="#" class="btn-login">Iniciar Sesión</a>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Estudiantes</a>
-        <a href="#">Asistencia</a>
-        <a href="#">Reportes</a>
-    </nav>
-
+    <!-- SECCIÓN PRINCIPAL (HERO) -->
     <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>El control de asistencia más seguro para tus pequeños</h1>
+                <p>Olvídate del registro manual y las demoras en la puerta. Con KIDS CHECK, automatiza la asistencia, envía notificaciones en tiempo real a los papis y garantiza la seguridad de cada niño desde el primer segundo.</p>
+            </div>
 
-        <section class="titulo">
-            <h2>Dashboard</h2>
-            <p>Resumen general del día</p>
+            <div class="hero-image">
+                <img src="epa1 (1).png" alt="Ilustración de niños y seguridad escolar">
+            </div>
         </section>
 
-        <section class="tarjetas">
+        <!-- SECCIÓN: CÓMO FUNCIONA -->
+        <section id="como-funciona" class="features">
+            <div class="section-header">
+                <h2>¿Cómo funciona KIDS CHECK?</h2>
+                <p>Un flujo automatizado en 3 sencillos pasos, diseñado para mantener informadas a las familias de nuestro nido.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Paso 1 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper blue-bg">
+                        <!-- PON AQUÍ TU IMAGEN PARA EL PASO 1 -->
+                        <img src="paso 1 (1).png" alt="Paso 1">
+                    </div>
+                    <h3>1. Registro con Credencial</h3>
+                    <p>El niño o su apoderado acerca su credencial al lector de KIDS CHECK al llegar. El sistema captura instantáneamente la hora exacta de entrada o salida sin generar filas.</p>
+                </div>
 
-            <article>
-                <h3>Total de estudiantes</h3>
-                <p></p>
-            </article>
+                <!-- Paso 2 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper blue-bg">
+                        <!-- PON AQUÍ TU IMAGEN PARA EL PASO 2 -->
+                        <img src="paso 1 (2).png" alt="Paso 2">
+                    </div>
+                    <h3>2. Notificación Inmediata</h3>
+                    <p>En esa misma fracción de segundo, la plataforma envía un mensaje automático al celular de los papis, informándoles que su hijo ha ingresado o salido de forma segura.</p>
+                </div>
 
-            <article>
-                <h3>Presentes</h3>
-                <p></p>
-            </article>
-
-            <article>
-                <h3>Tardanzas</h3>
-                <p></p>
-            </article>
-
-            <article>
-                <h3>Faltas</h3>
-                <p></p>
-            </article>
-
+                <!-- Paso 3 -->
+                <div class="feature-card">
+                    <div class="icon-wrapper blue-bg">
+                        <!-- PON AQUÍ TU IMAGEN PARA EL PASO 3 -->
+                        <img src="paso 1 (3).png" alt="Paso 3">
+                    </div>
+                    <h3>3. Panel Directivo</h3>
+                    <p>Las misses y directoras acceden a un panel en vivo donde visualizan estadísticas de asistencia, consolidando todo en reportes muy fáciles de leer.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="registro">
+        <!-- SECCIÓN: BENEFICIOS -->
+        <section id="beneficios" class="benefits">
+            <div class="section-header">
+                <h2>Beneficios de implementar KIDS CHECK</h2>
+                <p>Descubre por qué somos la herramienta preferida por los nidos y colegios iniciales más modernos.</p>
+            </div>
 
-            <h2>Registro de asistencia</h2>
-            <p>Consulta el estado de asistencia de los estudiantes.</p>
+            <div class="benefits-grid">
+                <!-- Beneficio 1 -->
+                <div class="benefit-item">
+                    <div class="icon-wrapper-small pink-bg">
+                        <!-- PON AQUÍ TU IMAGEN PARA BENEFICIO 1 -->
+                        <img src="Captura1.PNG" alt="Beneficio 1">
+                    </div>
+                    <div>
+                        <h4>Tranquilidad Familiar</h4>
+                        <p>Los padres eliminan la incertidumbre al saber en tiempo real que sus pequeños están seguros dentro del nido.</p>
+                    </div>
+                </div>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Edad</th>
-                        <th>Aula</th>
-                        <th>Estado</th>
-                    </tr>
-                </thead>
+                <!-- Beneficio 2 -->
+                <div class="benefit-item">
+                    <div class="icon-wrapper-small pink-bg">
+                        <!-- PON AQUÍ TU IMAGEN PARA BENEFICIO 2 -->
+                        <img src="Captura2.PNG" alt="Beneficio 2">
+                    </div>
+                    <div>
+                        <h4>Más tiempo para jugar</h4>
+                        <p>Las misses ya no pierden tiempo pasando lista manualmente y pueden dedicarse a recibir a los niños con alegría.</p>
+                    </div>
+                </div>
 
+                <!-- Beneficio 3 -->
+                <div class="benefit-item">
+                    <div class="icon-wrapper-small pink-bg">
+                        <!-- PON AQUÍ TU IMAGEN PARA BENEFICIO 3 -->
+                        <img src="Captura3.PNG" alt="Beneficio 3">
+                    </div>
+                    <div>
+                        <h4>Seguridad Reforzada</h4>
+                        <p>Control estricto de quién está dentro de la institución y quién recoge a cada niño a la hora de salida.</p>
+                    </div>
+                </div>
 
-                </tbody>
-            </table>
-
+                <!-- Beneficio 4 -->
+                <div class="benefit-item">
+                    <div class="icon-wrapper-small pink-bg">
+                        <!-- PON AQUÍ TU IMAGEN PARA BENEFICIO 4 -->
+                        <img src="Captura4.PNG" alt="Beneficio 4">
+                    </div>
+                    <div>
+                        <h4>Control de Ausentismo</h4>
+                        <p>Las estadísticas claras permiten al nido identificar patrones de faltas para comunicarse con las familias a tiempo.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-
     </main>
 
-    <footer>
-        <p> 2026 KIDS CHECK - Sistema de control de asistencia escolar</p>
-    </footer>
-
 </body>
-
 </html>
