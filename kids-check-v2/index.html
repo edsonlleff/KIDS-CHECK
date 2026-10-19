@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="KIDS-CHECK: sistema digital para la gestión de asistencia escolar de Angelus Play House.">
+    <title>KIDS-CHECK | Gestión de asistencia escolar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO (Flexbox) -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Principal">
+            <a href="#inicio" class="logo">
+                <svg viewBox="0 0 32 36" aria-hidden="true">
+                    <path d="M16 2 3 7v10c0 9 6 15 13 17 7-2 13-8 13-17V7z" fill="#1565B8" />
+                    <path d="m9 18 5 5 10-12" fill="none" stroke="#F2B01E" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                KIDS<span>-CHECK</span>
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+            <label for="menu-toggle" class="burger" aria-hidden="true"><i></i><i></i><i></i></label>
+            <ul class="nav-links">
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucion">Solución</a></li>
+                <li><a href="#pantallas">Pantallas</a></li>
+                <li><a href="#claves">Puntos clave</a></li>
+                <li><a href="#specs">Especificaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO (Grid) -->
+        <section id="inicio" class="hero container">
+            <div class="hero-text">
+                <span class="badge">Angelus Play House</span>
+                <h1>Asistencia escolar <em>simple y segura</em></h1>
+                <p>Sistema digital que reemplaza el papel por una herramienta rápida y amigable: toma lista con un par
+                    de toques y consulta el historial al instante.</p>
+                <div class="actions">
+                    <a href="#pantallas" class="btn btn-primary">Ver pantallas</a>
+                    <a href="#problema" class="btn btn-ghost">Ver el problema</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <span class="bubble b1"></span><span class="bubble b2"></span>
+                <img src="img/hero-mockup.jpg" alt="KIDS-CHECK en computador y celular" width="900" height="846">
+            </div>
+        </section>
+
+        <!-- PROBLEMA -->
+        <section id="problema" class="section container">
+            <h2 class="section-title reveal">El problema de hoy</h2>
+            <p class="section-sub reveal">La institución carece de un sistema digital para registrar la asistencia
+                escolar, lo que genera pérdida de información, errores y retrasos.</p>
+            <div class="split">
+                <figure class="logo-box reveal">
+                    <img src="img/logo-angelus.jpg" alt="Logo de Angelus Play House" width="585" height="444"
+                        loading="lazy">
+                </figure>
+                <div class="cards cards-stack">
+                    <article class="card reveal"><span class="icon">📄</span>
+                        <h3>Pérdida de información</h3>
+                        <p>Las hojas y cuadernos se extravían o se deterioran, sin copias de respaldo.</p>
+                    </article>
+                    <article class="card reveal"><span class="icon">✏️</span>
+                        <h3>Errores al tomar lista</h3>
+                        <p>El registro manual genera equivocaciones y datos difíciles de corregir.</p>
+                    </article>
+                    <article class="card reveal"><span class="icon">⏳</span>
+                        <h3>Retrasos en la gestión</h3>
+                        <p>Revisar el historial de un alumno toma demasiado tiempo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUCIÓN -->
+        <section id="solucion" class="section container">
+            <div class="split split-rev">
+                <div class="reveal">
+                    <h2 class="section-title left">Presentamos KIDS-CHECK</h2>
+                    <p class="lead">Un sistema web que optimiza la gestión de asistencia escolar mediante la
+                        digitalización de procesos administrativos, centralizando la información de estudiantes,
+                        usuarios y registros de asistencia.</p>
+                    <h3 class="mini">Usuarios del sistema</h3>
+                    <ul class="tags">
+                        <li>Directora</li>
+                        <li>Profesores</li>
+                        <li>Auxiliares</li>
+                    </ul>
+                </div>
+                <figure class="logo-box small reveal">
+                    <img src="img/logo-kidscheck.jpg" alt="Logo de KIDS-CHECK" width="420" height="477" loading="lazy">
+                </figure>
+            </div>
+        </section>
+
+        <!-- PANTALLAS (Grid + imágenes) -->
+        <section id="pantallas" class="section container">
+            <h2 class="section-title reveal">Pantallas de la aplicación</h2>
+            <p class="section-sub reveal">Un recorrido por las cuatro vistas principales del sistema.</p>
+            <div class="screens">
+                <figure class="screen reveal"><img src="img/pantalla-inicio.jpg" alt="Pantalla de inicio de sesión"
+                        width="420" height="837" loading="lazy">
+                    <figcaption><b>1</b> Inicio</figcaption>
+                </figure>
+                <figure class="screen reveal"><img src="img/pantalla-registro.jpg"
+                        alt="Pantalla para registrar un alumno" width="420" height="837" loading="lazy">
+                    <figcaption><b>2</b> Registro</figcaption>
+                </figure>
+                <figure class="screen reveal"><img src="img/pantalla-principal.jpg"
+                        alt="Pantalla principal de asistencia" width="420" height="844" loading="lazy">
+                    <figcaption><b>3</b> Principal</figcaption>
+                </figure>
+                <figure class="screen reveal"><img src="img/pantalla-reporte.jpg" alt="Pantalla de reporte de faltas"
+                        width="420" height="840" loading="lazy">
+                    <figcaption><b>4</b> Reporte</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- MAQUETA INTERACTIVA SOLO CON CSS -->
+        <section id="demo" class="section container">
+            <h2 class="section-title reveal">Así se toma la asistencia</h2>
+            <p class="section-sub reveal">Marca Presente, Ausente o Tarde: los colores cambian con transiciones de CSS.
+            </p>
+            <div class="demo">
+                <form class="card" onsubmit="return false">
+                    <h3>Asistencia · Viernes 16 de oct.</h3>
+                    <ul class="list">
+                        <li class="item"><span class="avatar">M</span>
+                            <div class="info"><b>Mateo García</b><small>Inicial 5 años</small></div>
+                            <div class="seg"><input type="radio" name="a1" id="a1p" checked><label class="p"
+                                    for="a1p">Presente</label><input type="radio" name="a1" id="a1a"><label class="a"
+                                    for="a1a">Ausente</label><input type="radio" name="a1" id="a1t"><label class="t"
+                                    for="a1t">Tarde</label></div>
+                        </li>
+                        <li class="item"><span class="avatar">S</span>
+                            <div class="info"><b>Sofía López</b><small>Inicial 5 años</small></div>
+                            <div class="seg"><input type="radio" name="a2" id="a2p" checked><label class="p"
+                                    for="a2p">Presente</label><input type="radio" name="a2" id="a2a"><label class="a"
+                                    for="a2a">Ausente</label><input type="radio" name="a2" id="a2t"><label class="t"
+                                    for="a2t">Tarde</label></div>
+                        </li>
+                        <li class="item"><span class="avatar">L</span>
+                            <div class="info"><b>Lucas Martínez</b><small>Inicial 5 años</small></div>
+                            <div class="seg"><input type="radio" name="a3" id="a3p"><label class="p"
+                                    for="a3p">Presente</label><input type="radio" name="a3" id="a3a" checked><label
+                                    class="a" for="a3a">Ausente</label><input type="radio" name="a3" id="a3t"><label
+                                    class="t" for="a3t">Tarde</label></div>
+                        </li>
+                        <li class="item"><span class="avatar">V</span>
+                            <div class="info"><b>Valentina Rojas</b><small>Inicial 5 años</small></div>
+                            <div class="seg"><input type="radio" name="a4" id="a4p"><label class="p"
+                                    for="a4p">Presente</label><input type="radio" name="a4" id="a4a"><label class="a"
+                                    for="a4a">Ausente</label><input type="radio" name="a4" id="a4t" checked><label
+                                    class="t" for="a4t">Tarde</label></div>
+                        </li>
+                    </ul>
+                    <button class="btn btn-primary" type="button">Guardar asistencia</button>
+                </form>
+
+                <aside class="card report">
+                    <h3>Reporte de faltas</h3>
+                    <p class="who"><span class="avatar">M</span> Mateo García · Octubre 2026</p>
+                    <p>Faltas del mes: <strong>2</strong></p>
+                    <p>Días faltados: <strong>Lunes 4, Jueves 14</strong></p>
+                    <p class="pct">Porcentaje de asistencia: <strong>91%</strong></p>
+                    <div class="progress" aria-hidden="true"><span></span></div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- PUNTOS CLAVE -->
+        <section id="claves" class="section container">
+            <h2 class="section-title reveal">Los puntos clave</h2>
+            <div class="cards">
+                <article class="card key reveal"><b>1</b>
+                    <h3>Versatilidad</h3>
+                    <p>Toma lista, registra alumnos, administra grados y genera reportes desde un mismo sistema.</p>
+                </article>
+                <article class="card key reveal"><b>2</b>
+                    <h3>Claridad</h3>
+                    <p>Datos directos y sin pantallas recargadas: días de falta y porcentaje de asistencia.</p>
+                </article>
+                <article class="card key reveal"><b>3</b>
+                    <h3>Usabilidad</h3>
+                    <p>Cualquier docente la usa con un par de toques, sin manuales ni conocimientos avanzados.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- ESPECIFICACIONES -->
+        <section id="specs" class="section container">
+            <h2 class="section-title reveal">Especificaciones</h2>
+            <div class="cards">
+                <article class="card spec reveal">
+                    <h3>Tecnologías</h3>
+                    <ul>
+                        <li>HTML5: estructura semántica</li>
+                        <li>CSS: variables, diseño responsivo, Flexbox, Grid, transiciones y animaciones</li>
+                    </ul>
+                </article>
+                <article class="card spec reveal">
+                    <h3>Requisitos funcionales</h3>
+                    <ul>
+                        <li>Registrar y eliminar estudiantes</li>
+                        <li>Marcar asistencia (Presente / Ausente / Tarde)</li>
+                        <li>Consultar historial por fecha</li>
+                    </ul>
+                </article>
+                <article class="card spec reveal">
+                    <h3>Requisitos no funcionales</h3>
+                    <ul>
+                        <li>Interfaz simple para cualquier docente</li>
+                        <li>Responsivo: computador, tablet y celular</li>
+                        <li>Sin instalación, en cualquier navegador</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p><strong>KIDS-CHECK</strong> · Proyecto para Angelus Play House</p>
+    </footer>
+</body>
+
+</html>
