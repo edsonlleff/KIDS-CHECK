@@ -6,13 +6,11 @@
 }
 
 body {
-    background-color: #FFFBEB; /* Fondo crema pastel */
-    color: #334155; /* Texto oscuro */
+    background-color: #FFFBEB; 
+    color: #334155; 
 }
 
-/* =========================================
-   CABECERA (NAVBAR)
-   ========================================= */
+/* CABECERA (NAVBAR) */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -28,14 +26,14 @@ body {
 .logo {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #FF3366; /* Rosa/Fresa */
+    color: #FF3366; 
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 .btn-login {
-    background-color: #FF3366; /* Rosa/Fresa */
+    background-color: #FF3366; 
     color: #FFFFFF;
     text-decoration: none;
     padding: 0.7rem 1.8rem;
@@ -44,15 +42,13 @@ body {
     font-size: 1rem;
 }
 
-/* =========================================
-   SECCIÓN HERO (PRINCIPAL)
-   ========================================= */
+/* SECCIÓN PRINCIPAL*/
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 5rem 5%;
-    background-color: #8B5CF6; /* Fondo morado */
+    background-color: #8B5CF6; 
     color: #FFFFFF;
     gap: 2rem;
     border-bottom-left-radius: 40px;
@@ -89,9 +85,7 @@ body {
     border-radius: 24px;
 }
 
-/* =========================================
-   ESTILOS COMPARTIDOS (TÍTULOS DE SECCIÓN)
-   ========================================= */
+/* ESTILOS COMPARTIDOS (TÍTULOS DE SECCIÓN)*/
 .section-header {
     text-align: center;
     margin-bottom: 3.5rem;
@@ -99,25 +93,23 @@ body {
 
 .section-header h2 {
     font-size: 2.5rem;
-    color: #FF3366; /* Rosa/Fresa */
+    color: #FF3366; 
     margin-bottom: 0.8rem;
     font-weight: 700;
 }
 
 .section-header p {
-    color: #64748B; /* Texto claro */
+    color: #64748B; 
     font-size: 1.1rem;
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
-/* =========================================
-   SECCIÓN: CÓMO FUNCIONA
-   ========================================= */
+/* SECCIÓN: CÓMO FUNCIONA*/
 .features {
     padding: 5rem 5%;
-    background-color: #FFFBEB; /* Fondo crema pastel */
+    background-color: #FFFBEB; 
 }
 
 .features-grid {
@@ -132,7 +124,7 @@ body {
     border-radius: 24px; 
     text-align: left;
     box-shadow: 0 10px 25px rgba(0,0,0,0.04);
-    border-top: 6px solid #0EA5E9; /* Azul cielo */
+    border-top: 10px solid #0EA5E9; 
 }
 
 .icon-wrapper {
@@ -157,21 +149,19 @@ body {
 }
 
 .feature-card h3 {
-    color: #8B5CF6; /* Morado */
+    color: #8B5CF6; 
     margin-bottom: 0.8rem;
     font-size: 1.4rem;
     font-weight: 700;
 }
 
 .feature-card p {
-    color: #64748B; /* Texto claro */
+    color: #64748B; 
     font-size: 1rem;
     line-height: 1.6;
 }
 
-/* =========================================
-   SECCIÓN: BENEFICIOS
-   ========================================= */
+/* SECCIÓN: BENEFICIOS */
 .benefits {
     padding: 5rem 5%;
     background-color: #FFFFFF;
@@ -216,20 +206,18 @@ body {
 
 .benefit-item h4 {
     font-size: 1.3rem;
-    color: #0EA5E9; /* Azul cielo */
+    color: #0EA5E9; 
     margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
 .benefit-item p {
-    color: #64748B; /* Texto claro */
+    color: #64748B; 
     font-size: 1rem;
     line-height: 1.6;
 }
 
-/* =========================================
-   DISEÑO RESPONSIVO (Móviles)
-   ========================================= */
+/* DISEÑO RESPONSIVO (Móviles)*/
 @media (max-width: 900px) {
     .hero {
         flex-direction: column;
