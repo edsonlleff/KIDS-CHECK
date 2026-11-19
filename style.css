@@ -1,238 +1,185 @@
+/* ==============================
+   ESTILOS GENERALES
+============================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #FFFBEB; 
-    color: #334155; 
+  font-family: "Segoe UI", sans-serif;
+  background: #f2f3f5;
+  color: #333;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  gap: 15px;
+  padding: 15px;
 }
 
-/* CABECERA (NAVBAR) */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 5%;
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+header, nav, main, footer {
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.logo {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #FF3366; 
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+/* ==============================
+   ENCABEZADO
+============================== */
+header {
+  grid-area: header;
+  background-color: #4fa3d1;
+  color: white;
+  text-align: center;
 }
 
-.btn-login {
-    background-color: #FF3366; 
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 0.7rem 1.8rem;
-    border-radius: 50px; 
-    font-weight: 600;
-    font-size: 1rem;
+/* ==============================
+   MENÚ (FLEXBOX)
+============================== */
+nav {
+  grid-area: nav;
+  background-color: #7cc8a3;
 }
 
-/* SECCIÓN PRINCIPAL*/
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 5%;
-    background-color: #8B5CF6; 
-    color: #FFFFFF;
-    gap: 2rem;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.hero-content {
-    flex: 1;
-    max-width: 600px;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  background: #5dbb88;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-.hero-content h1 {
-    font-size: 3.4rem;
-    line-height: 1.2;
-    margin-bottom: 1.2rem;
-    font-weight: 700;
+nav a:hover, .activo {
+  background-color: #48a972;
 }
 
-.hero-content p {
-    font-size: 1.15rem;
-    opacity: 0.95;
-    line-height: 1.6;
+/* ==============================
+   CONTENIDO PRINCIPAL
+============================== */
+main {
+  grid-area: main;
+  background: #fff;
 }
 
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+/* INDEX */
+.presentacion p {
+  margin-bottom: 15px;
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 24px;
+.destacados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-/* ESTILOS COMPARTIDOS (TÍTULOS DE SECCIÓN)*/
-.section-header {
-    text-align: center;
-    margin-bottom: 3.5rem;
+.destacados article {
+  flex: 1 1 calc(33.333% - 15px);
+  background-color: #f7d794;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.section-header h2 {
-    font-size: 2.5rem;
-    color: #FF3366; 
-    margin-bottom: 0.8rem;
-    font-weight: 700;
+/* SERVICIOS (GRID) */
+.grid-servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
-.section-header p {
-    color: #64748B; 
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.6;
+.servicio {
+  background-color: #dfe6e9;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-/* SECCIÓN: CÓMO FUNCIONA*/
-.features {
-    padding: 5rem 5%;
-    background-color: #FFFBEB; 
+/* PORTAFOLIO (GRID AVANZADO) */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+.proyecto {
+  background-color: #a29bfe;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
 }
 
-.feature-card {
-    background: #FFFFFF;
-    padding: 2.5rem 2rem;
-    border-radius: 24px; 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
-    border-top: 10px solid #0EA5E9; 
+/* CONTACTO (FLEXBOX FORMULARIO) */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
 }
 
-.icon-wrapper {
-    width: 65px;
-    height: 65px;
-    border-radius: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-    overflow: hidden; 
+input, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.icon-wrapper img {
-    max-width: 60%;
-    max-height: 60%;
-    object-fit: contain;
+button {
+  background-color: #4fa3d1;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.blue-bg {
-    background: #E0F2FE;
+button:hover {
+  background-color: #357ab8;
 }
 
-.feature-card h3 {
-    color: #8B5CF6; 
-    margin-bottom: 0.8rem;
-    font-size: 1.4rem;
-    font-weight: 700;
+/* ==============================
+   PIE DE PÁGINA
+============================== */
+footer {
+  grid-area: footer;
+  background-color: #786fa6;
+  color: white;
+  text-align: center;
 }
 
-.feature-card p {
-    color: #64748B; 
-    font-size: 1rem;
-    line-height: 1.6;
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+@media (max-width: 768px) {
+  .destacados article {
+    flex: 1 1 100%;
+  }
+}
+/* TABLET (>= 768px): 2 columnas */
+@media (min-width: 768px) {
+  .destacados article {
+    flex: 1 1 calc(50% - 15px);
+  }
 }
 
-/* SECCIÓN: BENEFICIOS */
-.benefits {
-    padding: 5rem 5%;
-    background-color: #FFFFFF;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+/* LAPTOP (>= 992px): 3 columnas */
+@media (min-width: 992px) {
+  .destacados article {
+    flex: 1 1 calc(33.333% - 15px);
+  }
 }
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 2.5rem;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.benefit-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-}
-
-.icon-wrapper-small {
-    width: 55px;
-    height: 55px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-
-.icon-wrapper-small img {
-    max-width: 60%;
-    max-height: 60%;
-    object-fit: contain;
-}
-
-.pink-bg {
-    background: #FFE4E6;
-}
-
-.benefit-item h4 {
-    font-size: 1.3rem;
-    color: #0EA5E9; 
-    margin-bottom: 0.5rem;
-    font-weight: 700;
-}
-
-.benefit-item p {
-    color: #64748B; 
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* DISEÑO RESPONSIVO (Móviles)*/
-@media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 4rem 5%;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-    }
-    
-    .hero-image {
-        justify-content: center;
-        margin-top: 2rem;
-        width: 100%;
-    }
-    
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
+/* PANTALLA GRANDE (>= 1200px) */
+@media (min-width: 1200px) {
+  html { font-size: 112.5%; }
 }
