@@ -262,24 +262,12 @@ footer p {
     margin: 0;
 }
 
-/* AJUSTE PARA CELULARES */
-@media (max-width: 700px) {
-    .menu {
-        align-items: flex-start;
-    }
+/* DISEÑO RESPONSIVO */
 
-    .boton-menu {
-        display: block;
-    }
-
-    .enlaces {
-        display: none;
-        width: 100%;
-        padding-top: 15px;
-    }
-
-    .enlaces li {
-        margin: 8px 0;
+/* CELULARES */
+@media (max-width: 480px) {
+    .contenedor {
+        width: 94%;
     }
 
     .inicio,
@@ -294,15 +282,78 @@ footer p {
     }
 
     .texto-inicio h1 {
-        font-size: 28px;
-    }
-
-    .enlaces {
-        flex-direction: column;
-        gap: 5px;
+        font-size: 25px;
     }
 
     .tarjetas {
         flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .boton-menu {
+        display: block;
+    }
+
+    .enlaces {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* TABLETS */
+@media (min-width: 481px) and (max-width: 991px) {
+    .contenedor {
+        width: 92%;
+    }
+
+    .inicio,
+    .dos-columnas {
+        gap: 20px;
+    }
+
+    .texto-inicio h1 {
+        font-size: 28px;
+    }
+
+    .tarjetas {
+        flex-wrap: wrap;
+    }
+
+    .tarjeta {
+        flex-basis: 40%;
+    }
+}
+
+/* LAPTOPS */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .contenedor {
+        max-width: 960px;
+    }
+
+    .inicio {
+        gap: 25px;
+    }
+
+    .texto-inicio h1 {
+        font-size: 32px;
+    }
+}
+
+/* PANTALLAS GRANDES */
+@media (min-width: 1200px) {
+    .contenedor {
+        max-width: 1150px;
+    }
+
+    .inicio {
+        gap: 45px;
+    }
+
+    .texto-inicio h1 {
+        font-size: 38px;
     }
 }
