@@ -1,0 +1,308 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #24558a;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #eaf1f8;
+    border-bottom: 1px solid #cccccc;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.enlaces {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.enlaces a {
+    color: #333333;
+}
+
+.enlaces a:hover {
+    color: #24558a;
+}
+
+.boton-menu {
+    display: none;
+    padding: 8px 12px;
+    background-color: #24558a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* SECCION DE INICIO */
+.inicio {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.texto-inicio {
+    width: 50%;
+}
+
+.texto-inicio h1 {
+    color: #24558a;
+    font-size: 34px;
+}
+
+.nombre-institucion {
+    color: #24558a;
+    font-weight: bold;
+}
+
+.imagen-inicio {
+    width: 50%;
+}
+
+/* SECCIONES */
+.seccion {
+    padding: 40px 0;
+}
+
+.fondo-claro {
+    background-color: #f3f6f9;
+}
+
+h2 {
+    color: #24558a;
+    text-align: center;
+    margin-top: 0;
+}
+
+h3 {
+    color: #24558a;
+}
+
+.introduccion {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+/* COLUMNAS */
+.dos-columnas {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.imagen {
+    width: 50%;
+}
+
+.imagen-logo {
+    max-width: 280px;
+    margin: auto;
+}
+
+.titulo-izquierda {
+    text-align: left;
+}
+
+/* TARJETAS */
+.tarjetas {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    flex: 1;
+    min-width: 200px;
+    padding: 18px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.tarjeta p {
+    margin-bottom: 0;
+}
+
+.lista-usuarios {
+    padding-left: 20px;
+}
+
+/* TABLA */
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #24558a;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f6f9;
+}
+
+.reporte {
+    margin-top: 20px;
+}
+
+/* FORMULARIO */
+.formulario {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f3f6f9;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.ayuda {
+    color: #555555;
+    font-size: 14px;
+}
+
+.boton-enviar {
+    margin-top: 15px;
+    padding: 10px 18px;
+    color: #ffffff;
+    background-color: #24558a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #193d65;
+}
+
+#respuesta {
+    color: #24558a;
+    font-weight: bold;
+}
+
+/* PIE DE PAGINA */
+footer {
+    padding: 18px;
+    color: #ffffff;
+    background-color: #24558a;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* AJUSTE PARA CELULARES */
+@media (max-width: 700px) {
+    .menu {
+        align-items: flex-start;
+    }
+
+    .boton-menu {
+        display: block;
+    }
+
+    .enlaces {
+        display: none;
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .enlaces li {
+        margin: 8px 0;
+    }
+
+    .inicio,
+    .dos-columnas {
+        flex-direction: column;
+    }
+
+    .texto-inicio,
+    .imagen-inicio,
+    .imagen {
+        width: 100%;
+    }
+
+    .texto-inicio h1 {
+        font-size: 28px;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+    }
+}

@@ -1,63 +1,251 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio | Sitio Web Flexbox & Grid</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KIDS-CHECK, página informativa sobre el registro de asistencia escolar.">
+    <title>KIDS-CHECK - Asistencia escolar</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ENCABEZADO -->
-  <header>
-    <h1>SISTEMA DE ASISTENCIA DIGITA - 2026</h1>
-  </header>
+    <!-- ENCABEZADO Y MENU -->
+    <header>
+        <nav class="contenedor menu">
+            <a href="#inicio" class="logo">KIDS-CHECK</a>
 
-  <!-- MENÚ DE NAVEGACIÓN -->
-  <nav>
-    <ul>
-      <li><a href="index.html" class="activo">Inicio</a></li>
-      <li><a href="servicios.html">Servicio</a></li>
-      <li><a href="portafolio.html">Portafolio</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
+            <button class="boton-menu" onclick="mostrarMenu()">Menú</button>
 
-  <!-- CONTENIDO PRINCIPAL -->
-  <main>
-    <section class="presentacion">
-      <h2>Bienvenido</h2>
-      <p>
-        Este sitio ha sido diseñado utilizando <strong>CSS Grid</strong> para la estructura general
-        y <strong>Flexbox</strong> para los componentes internos. Su objetivo es enseñar cómo combinar ambas
-        tecnologías de diseño modernas.
-      </p>
-      <p>
-        A medida que navegues por las páginas, observarás cómo se integran las técnicas de
-        <em>diseño responsivo</em>, adaptándose automáticamente a distintos tamaños de pantalla.
-      </p>
-    </section>
+            <ul id="menu" class="enlaces">
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#solucion">Solución</a></li>
+                <li><a href="#asistencia">Asistencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="destacados">
-      <article>
-        <h3>Diseño Moderno</h3>
-        <p>Usamos rejillas flexibles y componentes reutilizables.</p>
-      </article>
-      <article>
-        <h3>Adaptabilidad</h3>
-        <p>El diseño se ajusta automáticamente al dispositivo.</p>
-      </article>
-      <article>
-        <h3>Optimización</h3>
-        <p>Código limpio, semántico y fácil de mantener.</p>
-      </article>
-    </section>
-  </main>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
 
-  <!-- PIE DE PÁGINA -->
-  <footer>
-    <p>&copy; 2025 - Desarrollado por Juan Barahona Sánchez | Curso de Programación Web</p>
-  </footer>
+        <!-- INICIO -->
+        <section id="inicio" class="inicio contenedor">
+            <div class="texto-inicio">
+                <p class="nombre-institucion">Angelus Play House</p>
+                <h1>Asistencia escolar simple y segura</h1>
+                <p>
+                    KIDS-CHECK es una página que ayuda a llevar el control de asistencia
+                    de los estudiantes. Permite organizar la información y consultar
+                    los registros de una manera sencilla.
+                </p>
+            </div>
 
+            <div class="imagen-inicio">
+                <img src="img/hero-mockup.jpg" alt="Ejemplo de KIDS-CHECK en una computadora y un celular">
+            </div>
+        </section>
+
+        <!-- PROBLEMA -->
+        <section id="problema" class="seccion">
+            <div class="contenedor">
+                <h2>¿Cuál es el problema?</h2>
+                <p class="introduccion">
+                    Cuando la asistencia se registra en hojas o cuadernos, pueden
+                    ocurrir errores y se puede perder información.
+                </p>
+
+                <div class="dos-columnas">
+                    <div class="imagen">
+                        <img src="img/logo-angelus.jpg" alt="Logo de Angelus Play House">
+                    </div>
+
+                    <div class="tarjetas">
+                        <div class="tarjeta">
+                            <h3>Pérdida de información</h3>
+                            <p>Las hojas se pueden extraviar o dañar.</p>
+                        </div>
+
+                        <div class="tarjeta">
+                            <h3>Errores al tomar lista</h3>
+                            <p>Al escribir los datos a mano pueden ocurrir equivocaciones.</p>
+                        </div>
+
+                        <div class="tarjeta">
+                            <h3>Mucho tiempo</h3>
+                            <p>Buscar los registros de un estudiante puede tomar tiempo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOLUCION -->
+        <section id="solucion" class="seccion fondo-claro">
+            <div class="contenedor dos-columnas">
+                <div>
+                    <h2 class="titulo-izquierda">Nuestra solución: KIDS-CHECK</h2>
+                    <p>
+                        KIDS-CHECK permite registrar y consultar la asistencia de los
+                        estudiantes desde una página web. La información se presenta
+                        de forma clara y ordenada.
+                    </p>
+
+                    <h3>¿Quiénes pueden utilizarlo?</h3>
+                    <ul class="lista-usuarios">
+                        <li>Directora</li>
+                        <li>Profesores</li>
+                        <li>Auxiliares</li>
+                    </ul>
+                </div>
+
+                <div class="imagen imagen-logo">
+                    <img src="img/logo-kidscheck.jpg" alt="Logo de KIDS-CHECK">
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLA DE ASISTENCIA -->
+        <section id="asistencia" class="seccion">
+            <div class="contenedor">
+                <h2>Ejemplo de registro de asistencia</h2>
+                <p class="introduccion">
+                    La siguiente tabla muestra un ejemplo de cómo se pueden organizar
+                    los datos de los estudiantes.
+                </p>
+
+                <div class="tabla-contenedor">
+                    <table>
+                        <tr>
+                            <th>Estudiante</th>
+                            <th>Grado</th>
+                            <th>Fecha</th>
+                            <th>Asistencia</th>
+                        </tr>
+                        <tr>
+                            <td>Mateo García</td>
+                            <td>Inicial 5 años</td>
+                            <td>16/10/2026</td>
+                            <td>Presente</td>
+                        </tr>
+                        <tr>
+                            <td>Sofía López</td>
+                            <td>Inicial 5 años</td>
+                            <td>16/10/2026</td>
+                            <td>Presente</td>
+                        </tr>
+                        <tr>
+                            <td>Lucas Martínez</td>
+                            <td>Inicial 5 años</td>
+                            <td>16/10/2026</td>
+                            <td>Ausente</td>
+                        </tr>
+                        <tr>
+                            <td>Valentina Rojas</td>
+                            <td>Inicial 5 años</td>
+                            <td>16/10/2026</td>
+                            <td>Tarde</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="tarjeta reporte">
+                    <h3>Reporte de ejemplo</h3>
+                    <p><strong>Estudiante:</strong> Mateo García</p>
+                    <p><strong>Faltas del mes:</strong> 2</p>
+                    <p><strong>Porcentaje de asistencia:</strong> 91%</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PUNTOS CLAVE -->
+        <section class="seccion fondo-claro">
+            <div class="contenedor">
+                <h2>Ventajas de KIDS-CHECK</h2>
+
+                <div class="tarjetas">
+                    <div class="tarjeta">
+                        <h3>Fácil de usar</h3>
+                        <p>Los profesores pueden registrar la asistencia de forma sencilla.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>Información ordenada</h3>
+                        <p>Los datos de los estudiantes se encuentran organizados.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>Consulta rápida</h3>
+                        <p>Se puede revisar la información cuando sea necesario.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto" class="seccion">
+            <div class="contenedor">
+                <h2>Formulario de contacto</h2>
+                <p class="introduccion">
+                    Si tienes alguna consulta sobre KIDS-CHECK, puedes completar este formulario.
+                </p>
+
+                <form class="formulario" onsubmit="enviarFormulario(); return false;">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" required>
+
+                    <label for="asunto">Motivo del mensaje:</label>
+                    <select id="asunto" onchange="cambiarAsunto()">
+                        <option value="">Selecciona una opción</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Información">Solicitar información</option>
+                        <option value="Sugerencia">Sugerencia</option>
+                    </select>
+
+                    <p id="texto-asunto" class="ayuda">Selecciona el motivo de tu mensaje.</p>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" rows="4" required></textarea>
+
+                    <button type="submit" class="boton-enviar">Enviar mensaje</button>
+                    <p id="respuesta"></p>
+                </form>
+            </div>
+        </section>
+
+        <!-- ESPECIFICACIONES -->
+        <section class="seccion fondo-claro">
+            <div class="contenedor">
+                <h2>¿Cómo está hecha la página?</h2>
+
+                <div class="tarjetas">
+                    <div class="tarjeta">
+                        <h3>HTML</h3>
+                        <p>Se utiliza para agregar títulos, textos, imágenes, enlaces, tablas y formularios.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>CSS</h3>
+                        <p>Se utiliza para cambiar los colores, tamaños, espacios y organización de la página.</p>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>JavaScript</h3>
+                        <p>Se utiliza para mostrar mensajes y permitir algunas acciones sencillas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PAGINA -->
+    <footer>
+        <p><strong>KIDS-CHECK</strong> - Proyecto para Angelus Play House</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
