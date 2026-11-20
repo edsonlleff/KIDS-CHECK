@@ -21,10 +21,16 @@ function cambiarAsunto() {
     }
 }
 
-// Esta funcion muestra una respuesta al enviar el formulario.
+// Esta funcion muestra los datos del formulario en la consola.
 function enviarFormulario() {
     var nombre = document.getElementById("nombre").value;
-    var respuesta = document.getElementById("respuesta");
+    var correo = document.getElementById("correo").value;
+    var asunto = document.getElementById("asunto").value;
+    var mensaje = document.getElementById("mensaje").value;
 
-    respuesta.textContent = "Gracias " + nombre + ". Este formulario es solo una demostracion.";
+    console.log("Formulario enviado");
+    console.log("Nombre: " + nombre);
+    console.log("Correo: " + correo);
+    console.log("Motivo: " + asunto);
+    console.log("Mensaje: " + mensaje);
 }
