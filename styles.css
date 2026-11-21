@@ -245,10 +245,6 @@ tr:nth-child(even) {
     background-color: #193d65;
 }
 
-#respuesta {
-    color: #24558a;
-    font-weight: bold;
-}
 
 /* PIE DE PAGINA */
 footer {
@@ -266,9 +262,7 @@ footer p {
 
 /* CELULARES */
 @media (max-width: 480px) {
-    .contenedor {
-        width: 94%;
-    }
+    
 
     .inicio,
     .dos-columnas {
